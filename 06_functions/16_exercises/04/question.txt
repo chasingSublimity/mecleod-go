@@ -1,0 +1,6 @@
+What's the value of this expression: (true && false) || (false && true) || !(false && false)?
+
+(true && false) || (false && true) || !(false && false)
+(false)         || (false)         || (true)
+
+Answer: true
