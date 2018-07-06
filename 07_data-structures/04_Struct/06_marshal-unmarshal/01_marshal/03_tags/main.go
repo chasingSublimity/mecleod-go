@@ -5,6 +5,7 @@ import (
 	"fmt"
 )
 
+// Person - Exported
 type Person struct {
 	First string
 	Last  string `json:"-"`
