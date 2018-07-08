@@ -7,7 +7,7 @@ type Square struct {
 	side float64
 }
 
-func (z Square) area() float64 {
+func (z Square) area() float64 { // Square implements shape interface b/c of this method
 	return z.side * z.side
 }
 
@@ -16,7 +16,7 @@ type Shape interface {
 	area() float64
 }
 
-func info(z Shape) {
+func info(z Shape) { // expects Shape interface
 	fmt.Println(z)
 	fmt.Println(z.area())
 }
