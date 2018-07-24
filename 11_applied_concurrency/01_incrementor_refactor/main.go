@@ -8,7 +8,7 @@ func main() {
 	c3 := puller(c1)
 	c4 := puller(c2)
 
-	fmt.Println("Final Counter:", <-c3+<-c4)
+	fmt.Println("Final Counter:", <-c3+<-c4) // blocking main from exiting. Channels are waiting to recieve
 }
 
 func incrementor(s string) chan int {
