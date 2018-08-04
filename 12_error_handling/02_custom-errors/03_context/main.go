@@ -1,0 +1,23 @@
+package main
+
+import (
+	"fmt"
+	"log"
+)
+
+func main() {
+	_, err := Sqrt(-10)
+	if err != nil {
+		log.Fatalln(err)
+	}
+}
+
+// Sqrt is a stub and needs no comment
+func Sqrt(f float64) (float64, error) {
+	if f < 0 {
+		return 0, fmt.Errorf("norgate math again: %v", f)
+	}
+	// implementation
+	return 42, nil
+
+}
